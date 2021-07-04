@@ -1,54 +1,46 @@
 {
-	"name": "cat-coding",
-	"description": "Cat Coding - A Webview API Sample",
-	"version": "0.0.1",
-	"publisher": "vscode-samples",
-	"private": true,
-	"license": "MIT",
+	"name": "vscode-terminal-log",
+	"displayName": "Terminal Log",
+	"description": "ターミナル出力をファイルにアウトプット",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-extension-samples"
+		"url": "https://github.com/HayatoKudou/vscode-terminal-log"
 	},
+	"version": "0.0.1",
+	"publisher": "devwright",
 	"engines": {
-		"vscode": "^1.47.0"
+		"vscode": "^1.31.0"
 	},
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:catCoding.start",
-		"onCommand:catCoding.doRefactor",
-		"onWebviewPanel:catCoding"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "catCoding.start",
-				"title": "Start cat coding session",
-				"category": "Cat Coding"
-			},
-			{
-				"command": "catCoding.doRefactor",
-				"title": "Do some refactoring",
-				"category": "Cat Coding"
+				"command": "extension.terminalLog.pasteLog",
+				"title": "Terminal: Log"
 			}
 		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
-		"lint": "eslint . --ext .ts,.tsx",
-		"watch": "tsc -w -p ./"
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
 	},
-	"dependencies": {},
 	"devDependencies": {
-		"@types/node": "^12.12.0",
-		"@types/vscode": "^1.47.0",
-		"@types/vscode-webview": "^1.57.0",
-		"@typescript-eslint/eslint-plugin": "^4.16.0",
-		"@typescript-eslint/parser": "^4.16.0",
-		"eslint": "^7.21.0",
-		"typescript": "^4.3.2"
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"vsce": "^1.57.0"
 	}
 }
