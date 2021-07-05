@@ -21,8 +21,9 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.terminalLog.pasteLog",
-				"title": "Terminal: Log"
+				"command": "catCommand.changeCats",
+				"title": "get 100 new cats",
+				"category": "Cat Command"
 			}
 		]
 	},
@@ -41,6 +42,7 @@
 		"@types/mocha": "^2.2.42"
 	},
 	"dependencies": {
+		"axios": "^0.21.1",
 		"vsce": "^1.57.0"
 	}
 }
