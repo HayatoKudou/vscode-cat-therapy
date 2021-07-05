@@ -1,7 +1,7 @@
 # Cat Therapy
 
-Just press a button to see a gif image of a cat.
-Give your brain a break.
+Just press a button to see a gif image of a cat.<br>
+Give your brain a break.<br>
 Cats solve everything.
 
 ## Demo
