@@ -1,13 +1,13 @@
 {
 	"name": "vscode-cat-therapy",
-	"displayName": "Cat Therapy",
+	"displayName": "Cat-Gif-Therapy",
 	"description": "Show cat gifs",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/HayatoKudou/vscode-cat-therapy"
 	},
 	"version": "0.0.1",
-	"publisher": "devwright",
+	"publisher": "CatTherapy",
 	"engines": {
 		"vscode": "^1.31.0"
 	},
