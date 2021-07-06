@@ -1,10 +1,10 @@
 {
-	"name": "vscode-terminal-log",
-	"displayName": "Terminal Log",
-	"description": "ターミナル出力をファイルにアウトプット",
+	"name": "vscode-cat-therapy",
+	"displayName": "Cat Therapy",
+	"description": "Show cat gifs",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/HayatoKudou/vscode-terminal-log"
+		"url": "https://github.com/HayatoKudou/vscode-cat-therapy"
 	},
 	"version": "0.0.1",
 	"publisher": "devwright",
